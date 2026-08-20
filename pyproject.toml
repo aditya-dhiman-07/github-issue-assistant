@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-issue-assistant"
+version = "0.1.0"
+description = "GitHub Issue Resolution Assistant scaffold with FastAPI and Streamlit"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Aditya Dhiman" }
+]
+keywords = ["fastapi", "streamlit", "rag", "github", "qdrant", "ollama"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Framework :: FastAPI",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

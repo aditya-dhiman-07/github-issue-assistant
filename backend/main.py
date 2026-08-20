@@ -1,4 +1,4 @@
-"""FastAPI app entrypoint with a Todo API learning foundation."""
+"""FastAPI app entrypoint for GitHub Issue Resolution Assistant."""
 
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -8,7 +8,7 @@ from backend.routes import duplicate_check, health, ingest, search
 
 app = FastAPI(
     title="GitHub Issue Resolution Assistant API",
-    description="Phase 2 learning foundation with Todo API and modular route scaffolding.",
+    description="RESTful API for semantic search and automated analysis of GitHub repository issues, pull requests, and commits.",
     version="0.1.0",
 )
 
